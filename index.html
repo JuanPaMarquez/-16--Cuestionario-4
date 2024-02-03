@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header id="header">
+            <div class="marca">
+                <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/at_icon-icons.com_50456.png" alt="" id="header-img">
+                <h1>Learn CSS</h1>
+            </div>
+            <nav id="nav-bar">
+                <a href="#descripcion" class="nav-link">Descripcion</a>
+                <a href="#video" class="nav-link">CSS Grid</a>
+                <a href="#productos" class="nav-link">Mas Productos</a>
+            </nav>
+        </header>
+        <h2>Welcome to My page</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="email"><input id="email" name="email" type="email" placeholder="Enter email here" required></label>
+            <input id="submit" type="submit">
+        </form>
+        <section id="descripcion">
+            <ul class="lists">
+                <li>
+                    <h4 class="list-subtitle">CSS Grid Layout</h4>
+                    <p>The CSS grid layout module excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives.</p>
+                </li>
+                <li>
+                    <h4 class="list-subtitle">CSS Flexbox</h4>
+                    <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces. This article explains all the fundamentals.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="video">
+            <h2>Video de Explicacion</h2>
+            <div>
+                <iframe id="video" height="315" src="https://www.youtube.com/embed/iTjkiI8QQsM" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="productos">
+            <div class="objeto">
+                <h4>Plan Mensual</h4>
+                <p>$20/mes</p>
+                <button>Comprar</button>
+            </div>
+            <div class="objeto">
+                <h4>Plan Semestral</h4>
+                <p>$18/mes</p>
+                <button>Comprar</button>
+            </div>
+            <div class="objeto">
+                <h4>Plan Anual</h4>
+                <p>$15/mes</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>Created by: <a href="https://github.com/JuanPaMarquez" target="_blank">Juan Pablo Marquez</a></h4>
+        <a href="https://www.freecodecamp.org/" target="_blank">By freeCodeCamp</a>
+    </footer>
+</body>
+</html>

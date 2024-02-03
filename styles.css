@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    height: 2rem;
+}
+
+.marca {
+    width: 13rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    top: 0;
+}
+
+#nav-bar {
+    width: 22rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    border-top: 1px double gray;
+    border-bottom: 1px double gray;
+}
+
+h2, form {
+    width: 15rem;
+    margin: 10px auto;
+    text-align: center;
+    margin: 10px auto;
+}
+
+h2 {
+    margin-top: 2rem;
+}
+
+form {
+    margin-bottom: 3rem;
+}
+
+#descripcion {
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#descripcion ul {
+    list-style-type: none;
+}
+
+#descripcion ul li h4 {
+    margin: 0;
+}
+
+#descripcion ul li p {
+    margin-top: 5px;
+    margin-bottom: 3rem;
+}
+
+.video div {
+    width: 60%;
+    height: 20rem;
+    margin: 0 auto;
+    background-color: black;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}
+
+#productos {
+    max-width: 700px;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem auto;
+    margin-bottom: 0;
+}
+
+.objeto {
+    width: 10rem;
+    text-align: center;
+    border: 2px double gray;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+.objeto h4 {
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.objeto p {
+    height: 40px;
+}
+
+.objeto button {
+    background-color: rgb(255, 230, 2);
+    color: rgb(19, 18, 18);
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+
+.objeto button:hover {
+    cursor: pointer;
+}
+
+#productos:last-of-type::after {
+    content: "";
+    width: 10rem;
+}
+
+footer {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer h4 {
+    margin: 1rem;
+}
+
+footer a {
+    color: rgb(25, 0, 255);
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    #productos {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    #header {
+        display: block;
+        text-align: center;
+    }
+
+    .marca {
+        margin: 1px auto;
+    }
+
+    #nav-bar {
+        margin: 2px auto;
+    }
+
+    #descripcion {
+        width: 100%;
+    }
+
+    .video div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        width: 99%;
+    }
+
+    #descripcion ul {
+        padding-left: 0; 
+    }
+}
+
+@media (max-width: 390) {
+    #nav-bar {
+        flex-direction: column;
+    }
+}
+
